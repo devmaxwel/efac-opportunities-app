@@ -1,6 +1,7 @@
 import React from 'react'
-import Button from '../Interface/Button';
 import './Welcome.css'
+
+
 
 
 
@@ -12,11 +13,11 @@ const WelcomePage =()=> {
               <div className="logo">
                   <img src="" alt="" />
                  <div className="actions">
-                     <button>SignIn</button>
+                     <button><i class="fas fa-lock"></i> SignIn</button>
                      <div className="desc">
                 <h2>EFAC - Career Development Centre</h2>
                 <h3>Unlocking Infinite Opportunities</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis ad corporis suscipit a magnam perspiciatis deserunt fuga quasi delectus officia.</p>
+                <p>Education For All Children is a non-profit organization that offers bright needy students eight-year schorlaship to futher their Secondary and University Studies. The Career Centre post job opportunities for this young talents through this platform</p>
 
                 
             </div> 
