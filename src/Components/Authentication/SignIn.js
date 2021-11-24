@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Database from '../../Database/Firebase'
+import HomePage from '../../Web/HomePage'
 
 import LoginForm from './LoginForm'
 
@@ -68,17 +69,20 @@ const SignIn =()=>{
     },[])
 
     return (
+        <div>
+           {user ? <HomePage /> :
+           
+               <LoginForm email={email} 
+               setEmail={setEmail}
+               password={password}
+               setPassword={setPassword} 
+               HandleSignIn={HandleSignIn}
+               EmailError={emailError}
+               PasswordError={passworderror} 
+            />}
+        </div>
       
-             <LoginForm email={email} 
-                        setEmail={setEmail}
-                        password={password}
-                        setPassword={setPassword} 
-                        hasAccount={hasAccount}
-                        hasAccount={hasAccount}
-                        HandleSignIn={HandleSignIn}
-                        EmailError={emailError}
-                        PasswordError={passworderror} 
-                     />
+         
     
     )
 }

@@ -15,17 +15,24 @@
     flex-wrap: wrap;  
     width: 70%;
     top: 50px;
-    transform: translate(20%,100%);
-    
-   
+    transform: translate(20%,80%);
 }
 
-.desc h2,h3{
+.desc h2{
     font-size: 3.2rem;
+    font-family:'Times New Roman', Times, serif ;
+
+}
+.desc h3{
+    font-size: 2.3rem;
+    font-family:'Times New Roman', Times, serif ;
+
 
 }
 .desc p{
     font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: 100;
 }
 
 
