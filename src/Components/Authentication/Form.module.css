@@ -82,7 +82,7 @@
   
   @media(max-width:970px){
     .loginContainer{
-      height: 100vh;
+      height: 100%;
     }
    
   }
