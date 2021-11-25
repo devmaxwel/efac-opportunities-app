@@ -1,17 +1,13 @@
 .login {
     width: 100%;
-    height: 100vh;
-    padding: 0px 0px 0px 0px;
     background: #fff;
-    float: left;
   }
   
   .loginContainer {
-    padding: 60px;
-    margin: 0px;
+    padding: 60px 60px;
     width: 100%;
-    height: 100%;
     background: #080c0e;   
+    height: 100vh;
   }
   
   .login .loginContainer label {
@@ -75,6 +71,7 @@
     cursor: pointer;
   }
   .logo img{
+    margin-top: 50px;
     width:100%;
     object-fit: cover;
     height: auto;
@@ -82,7 +79,7 @@
   
   @media(max-width:970px){
     .loginContainer{
-      height: 100%;
+      height: 150vh;
     }
    
   }
