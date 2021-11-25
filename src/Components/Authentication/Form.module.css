@@ -71,7 +71,7 @@
     cursor: pointer;
   }
   .logo img{
-    margin-top: 50px;
+    margin-top: 10px;
     width:100%;
     object-fit: cover;
     height: auto;
@@ -79,7 +79,7 @@
   
   @media(max-width:970px){
     .loginContainer{
-      height: 150vh;
+      height: 100vh;
     }
    
   }
