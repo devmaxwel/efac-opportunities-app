@@ -1,14 +1,14 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Database from '../../Database/Firebase'
-import HomePage from '../../Web/HomePage'
+import LoginForm from './LoginForm';
+import HomePage from '../../Web/HomePage';
 
-import LoginForm from './LoginForm'
 
 const SignIn =()=>{
-    const [user, setUser] = useState('')
-    const [email, setEmail] = useState('')
-    const [emailError, setEmailError] = useState('')
+    const [user, setUser] = useState('');
+    const [email, setEmail] = useState('');
+    const [emailerror, setEmailError] = useState('');
     const [password, setPassword] = useState('');
     const [passworderror, setPasswordError] = useState('');
 
@@ -26,18 +26,19 @@ const SignIn =()=>{
     
     const HandleSignIn=()=>{
         clearErrors();
-        Database
+         Database
         .auth()
         .signInWithEmailAndPassword(email ,password)
-        .catch(error => {
-            switch(error.code){
+        .catch(err =>{
+            switch(err.code){
                 case "auth/invalid-email":
-                    case "auth/user-disbaled":
-                        case "auth/user-not-found":
-                            setEmailError(error.message);
-                            break
-                            case "auth/wrong-password":
-                                setPasswordError(error.message);
+                  case "auth/user-disabled":
+                    case "auth/user-not-found":
+                      setEmailError(err.message);
+                      break;
+                      case "auth/wrong-password":
+                        setPasswordError(err.message);
+                        break;
             }
         })
 
@@ -59,26 +60,29 @@ const SignIn =()=>{
                 clearInputs();
                 setUser(user)
             }else{
-                setUser(null);
+                setUser('');
             }
         })
     }
 
     useEffect(()=> {
        existingUserListener();
-    },[])
+    })
 
     return (
         <div>
-           {user ? <HomePage /> :
+           {user ? <HomePage handleLogOut={handleLogOut} /> :
            
-               <LoginForm email={email} 
+               <LoginForm 
+               email={email} 
                setEmail={setEmail}
                password={password}
                setPassword={setPassword} 
                HandleSignIn={HandleSignIn}
-               EmailError={emailError}
-               PasswordError={passworderror} 
+               EmailError={emailerror}
+               PasswordError={passworderror}
+               setEmailError={setEmailError}
+               setPasswordError={setPasswordError}
             />}
         </div>
       

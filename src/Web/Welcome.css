@@ -1,21 +1,31 @@
-.wrapper{
-    background: rgba(0,0,0,0.7) url(../Images/Background.JPG)no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
+.ul{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:0;
+    margin: 0;
+}
+.cover{
     width: 100%;
-    height: 100vh;  
- 
+    height: 100vh;
+}
+
+.cover img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+
 }
 
 .desc{
     justify-content: center;
     text-align: center;
     align-items: center;
-    color: #fff;  
+    color:#fff;  
     flex-wrap: wrap;  
     width: 70%;
     top: 50px;
-    transform: translate(20%,80%);
+    transform: translate(20%,-270%);
 }
 
 .desc h2{

@@ -1,29 +1,30 @@
 import React from 'react'
-import './Form.css';
+import classes from './Form.module.css';
 
 
 const LoginForm =(props) =>{
+
     const{
-            email, setEmail, 
-            password,  setPassword,
-            HandleSignIn, 
-          emailerror, passworderror,
+        email,setEmail,
+        password,setPassword,
+        HandleSignIn, emailerror,passworderror
+        
     }=props;
 
-
     return (
-        <section className="login">
-            <div className="loginContainer">
+        <section className={classes.login}>
+            <div className={classes.loginContainer}>
                 <label>Username</label>
-                <input type="email" autoFocus  required value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="email" placeholder="efac@test.com"  required value={email} onChange={(e) => setEmail(e.target.value)} />
                 <p className="errorMsg">{emailerror}</p>
 
                 <label>Password</label>
-                <input type="password" required autoFocus value={password} onChange={(e) =>setPassword(e.target.value)}/>
+                <input type="password" placeholder="123456" required value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <p className="errorMsg">{passworderror}</p>
 
-                <div className="btnContainer">
+                <div className={classes.btnContainer}>
                     <button onClick={HandleSignIn}>SignIn</button>
+                    <p>Don't have an Account?<span>Contact EFAC-IT ADMIN</span></p>
                 </div>
             </div>
             
