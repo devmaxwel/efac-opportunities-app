@@ -39,6 +39,7 @@ const SignIn =()=>{
                       case "auth/wrong-password":
                         setPasswordError(err.message);
                         break;
+                        default:
             }
         })
 
