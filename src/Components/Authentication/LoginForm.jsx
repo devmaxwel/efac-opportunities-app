@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './Form.module.css';
+import efac from '../../Images/efac.jpeg';
 
 
 const LoginForm =(props) =>{
@@ -13,7 +14,9 @@ const LoginForm =(props) =>{
 
     return (
         <section className={classes.login}>
+             
             <div className={classes.loginContainer}>
+            <div className={classes.logo}> <img src={efac} alt="" /></div>
                 <label>Username</label>
                 <input type="email" placeholder="efac@test.com"  required value={email} onChange={(e) => setEmail(e.target.value)} />
                 <p className="errorMsg">{emailerror}</p>
