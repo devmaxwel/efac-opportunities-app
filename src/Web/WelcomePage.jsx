@@ -12,7 +12,7 @@ const WelcomePage =()=> {
                <SignIn />
          
            <div className="cover">
-               <div className="overlay">
+              
                <img src={cover} alt="cover" />
                <div className="desc">
                    <h1>EFAC - CAREER DEVELOPMENT CENTRE</h1>
@@ -21,7 +21,7 @@ const WelcomePage =()=> {
                </div>
                </div>
 
-           </div>
+         
         
         </div>   
     )
