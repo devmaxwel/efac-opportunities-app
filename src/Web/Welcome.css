@@ -78,6 +78,9 @@
     .desc{
         display: none;
     }
+    .cover{
+        display:none ;
+    }
   
 }
 
