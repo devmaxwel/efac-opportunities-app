@@ -1,13 +1,30 @@
 import React from 'react'
 import './Home.css'
+import logo from '../Images/efac.jpeg'
 function HomePage({handleLogOut}) {
  
     return (
-        <div>
+        <header>
+            <nav className="navbar">
+                <div className="logo">
+                    <img src={logo} alt='logo' />
+                </div>
+                <ul className="nav-links">
+                    <li className="home">Home</li>
+                    <li className="about">About</li>
+                    <li className="trending">Trending</li>
+                    <li className="buttons"></li>
+                    <div className="actions">
+                     <li >Create Post</li>
+                     <li>Log Out</li>
+                    </div>
+                   
+                </ul>
+            </nav>
     
        <h1>Welcome Succesfull Login</h1>
-       <button onClick={handleLogOut}>SignOut</button>
-    </div>
+      
+    </header>
     )
 }
 

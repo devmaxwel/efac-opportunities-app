@@ -3,20 +3,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background:hsla(0, 87%, 17%, 0.932);
-    height: 75px;
+    background:rgb(46, 34, 12);
+    height: 90px;
     width: 100%;
     margin: 0;
     
 }
-.logo{
-    font-size: 2rem;
-    color:  #fff;
-    font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
-    padding-right: 0;
-    margin: 5px;
-
+.logo img{
+    width: 250px;
+    object-fit: cover;
+    left: 0;
+    margin: 0;
+    float: left;
+    
 }
 
 .nav-links{
@@ -28,7 +27,9 @@
 
 }
 
-.home,.about,.announcements,.trending{
+
+
+.home,.about,.trending{
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
@@ -62,22 +63,22 @@
 }
 
 .actions {
-    padding: 0rem;
-    text-align: center;
-    top: 20px;
-    left: 0;
-    margin: 0;
+    display: flex;
+    margin: 5px;
+    color: #fff;
+    margin-top: 0px;
+    font-size: 22px;
+
+  }
+
+  .actions li{
+      padding: 10px 25px;
+      background: rgb(197, 24, 24);
+      margin: 5px;
+      border-radius: 4px;
   }
   
-  .actions button {
-    font: inherit;
-    cursor: pointer;
-    color: #fff;
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-  }
+ 
 
   .mobile-menu-icon{
       display: none;
