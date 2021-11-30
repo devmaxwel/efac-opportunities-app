@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Form.module.css';
 import efac from '../../Images/efac.jpeg';
-import homeImage from '../../Images/career.jpeg'
+
 
 
 const LoginForm =(props) =>{
@@ -36,7 +36,10 @@ const LoginForm =(props) =>{
 
         </section>
         <div className={classes.cover}>
-                <img src={homeImage} alt="cover" />
+               <div className={classes.desc}>
+                   <h1>EFAC- CAREER DEVELOPMENT CENTRE</h1>
+                   <h2>Unlocking Infinite Opportunities</h2>
+               </div>
             </div>
 
         </div>

@@ -16,9 +16,9 @@ function HomePage({handleLogOut}) {
                     <li className="buttons"></li>
                     <div className="actions">
                      <li >Create Post</li>
-                     <li>Log Out</li>
+                     <li onClick={handleLogOut}>Log Out</li>
                     </div>
-                   
+  
                 </ul>
             </nav>
     

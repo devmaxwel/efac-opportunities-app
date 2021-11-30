@@ -14,4 +14,3 @@ const firebaseConfig = {
 
   export default Database;
   
-  // Initialize Firebase

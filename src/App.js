@@ -4,14 +4,14 @@ import SignIn from './Components/Authentication/SignIn';
 
 
 
+
 function App() {
   return (
         <Switch>
-            <Route path='/' exact>
+            <Route path='/' exac={true}>
                <SignIn />
             </Route>
-
-             
+     
        </Switch>
        
   );

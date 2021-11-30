@@ -3,8 +3,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background:rgb(46, 34, 12);
-    height: 90px;
+    background-image: linear-gradient(to right, #0051ff, #FF0000);
+    background-image: -o-linear-gradient(right, #ffd900, #FF0000);
+    background-image: -moz-linear-gradient(right, #0000FF, #FF0000);
+    background-image: -webkit-linear-gradient(left, #0000FF, #FF0000);
+    background-blend-mode: multiply;
+    height: 95px;
     width: 100%;
     margin: 0;
     
@@ -24,6 +28,9 @@
     list-style-type:none;
     margin: 5px;
     z-index: 4;
+    font-family: 'Ubuntu' sans-serif;
+    font-size: 20px;
+
 
 }
 
@@ -38,6 +45,7 @@
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
+    margin-top: 10px;
 
 }
 
@@ -73,9 +81,13 @@
 
   .actions li{
       padding: 10px 25px;
-      background: rgb(197, 24, 24);
-      margin: 5px;
+      background: orange;
+      margin: 10px;
       border-radius: 4px;
+      cursor: pointer;
+      font-family: 'Ubuntu' sans-serif;
+    font-size: 24px;
+    font-style: italic;
   }
   
  
