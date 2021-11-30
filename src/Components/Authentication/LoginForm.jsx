@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './Form.module.css';
 import efac from '../../Images/efac.jpeg';
+import homeImage from '../../Images/career.jpeg'
 
 
 const LoginForm =(props) =>{
@@ -13,7 +14,8 @@ const LoginForm =(props) =>{
     }=props;
 
     return (
-        <section className={classes.login}>
+        <div className={classes.ul}>
+         <section className={classes.login}>
              
             <div className={classes.loginContainer}>
             <div className={classes.logo}> <img src={efac} alt="" /></div>
@@ -33,6 +35,11 @@ const LoginForm =(props) =>{
             
 
         </section>
+        <div className={classes.cover}>
+                <img src={homeImage} alt="cover" />
+            </div>
+
+        </div>
     )
 }
 

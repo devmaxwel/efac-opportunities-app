@@ -71,7 +71,7 @@ const SignIn =()=>{
     })
 
     return (
-        <div>
+        <div className="ul">
            {user ? <HomePage handleLogOut={handleLogOut} /> :
            
                <LoginForm 
@@ -85,6 +85,8 @@ const SignIn =()=>{
                setEmailError={setEmailError}
                setPasswordError={setPasswordError}
             />}
+
+        
         </div>
       
          
