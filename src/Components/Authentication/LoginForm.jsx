@@ -1,10 +1,13 @@
 import React from 'react'
 import classes from './Form.module.css';
 import efac from '../../Images/efac.jpeg';
+import { useState } from 'react';
 
 
 
 const LoginForm =(props) =>{
+
+    const [visible, setVisibility] = useState(false)
 
     const{
         email,setEmail,
@@ -20,14 +23,22 @@ const LoginForm =(props) =>{
             <div className={classes.loginContainer}>
             <div className={classes.logo}> <img src={efac} alt="" /></div>
                 <label>Username</label>
-                <input type="email" placeholder="efac@test.com"  required value={email} onChange={(e) => setEmail(e.target.value)} />
+              
+               <input type="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)}/> 
                 <p className="errorMsg">{emailerror}</p>
 
-                <label>Password</label>
-                <input type="password" placeholder="123456" required value={password} onChange={(e) => setPassword(e.target.value)}/>
+              
+                <label>Pssword</label>
+                <input class="fas fa-lock" type={visible ? "text" : "password"}  required value={password} onChange={(e) => setPassword(e.target.value)} />
+
+                <div className={classes.password} onClick={() =>setVisibility(!visible)}>
+                {visible ?<i class="fas fa-eye-slash"></i> :  
+                <i class="fas fa-eye"></i>}
+                </div>
+
                 <p className="errorMsg">{passworderror}</p>
 
-                <div className={classes.btnContainer}>
+                <div className={classes.btnContainer} >
                     <button onClick={HandleSignIn}>SignIn</button>
                     <p>Don't have an Account?<span>Contact EFAC-IT ADMIN</span></p>
                 </div>
