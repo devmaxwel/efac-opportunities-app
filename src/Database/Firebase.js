@@ -1,13 +1,13 @@
 import firebase from 'firebase/compat';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAWoahQKQiOIk5CJE-zQMXw0H5iQNNLFa8",
-    authDomain: "efac-kenya.firebaseapp.com",
-    projectId: "efac-kenya",
-    storageBucket: "efac-kenya.appspot.com",
-    messagingSenderId: "438805241630",
-    appId: "1:438805241630:web:6565be1a6f49309c24b30f",
-    measurementId: "G-Z8MPQY52C1"
+  apiKey: "AIzaSyBwkJKbGQUFhsu22NJIHtGiZ-sk3cps1qo",
+  authDomain: "saruk-el.firebaseapp.com",
+  projectId: "saruk-el",
+  storageBucket: "saruk-el.appspot.com",
+  messagingSenderId: "892256300057",
+  appId: "1:892256300057:web:cf4f239042e19c761fce88",
+  measurementId: "G-Y95KRY2P5H"
   };
 
   const Database = firebase.initializeApp(firebaseConfig);
